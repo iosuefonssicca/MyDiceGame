@@ -1,0 +1,70 @@
+.text{
+  /*color: rgb(41, 189, 127);*/
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2{
+  font-size: 2rem;
+}
+
+h3{
+  /*color: whitesmoke;*/
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 100px;
+}
+
+body{
+  background-color: rgb(56, 68, 73);
+}
+
+#ttl{
+  display: flex;
+  justify-content: center;
+  font-size: 7rem;
+  margin-bottom: 130px;
+}
+
+#titlesPlayers{
+  display: flex;
+  justify-content: center;
+  gap: 11%;
+  margin-bottom: 20px;
+}
+
+#midDiv{
+  display: flex;
+  justify-content: center;
+  gap: 6%;
+}
+
+.dice{
+  height: 250px;
+  width: 250px;
+  background-color: brown;
+  border-radius: 8%;
+}
+
+.dots{
+  background-color: whitesmoke;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.dotsGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+}
+
+.invisible{
+  visibility: hidden;
+}
