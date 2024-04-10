@@ -34,7 +34,7 @@ if(rndResult1 === 1){
     document.getElementById("dot2Dice1").classList.add("invisible");
     document.getElementById("dot3Dice1").classList.add("invisible");
     document.getElementById("dot4Dice1").classList.add("invisible");
-    document.getElementById("dot5Dice1").classList.add("vinvisible");
+    document.getElementById("dot5Dice1").classList.add("visible");
     document.getElementById("dot6Dice1").classList.add("invisible");
     document.getElementById("dot7Dice1").classList.add("invisible");
     document.getElementById("dot8Dice1").classList.add("invisible");
@@ -76,7 +76,7 @@ if(rndResult2 === 1){
     document.getElementById("dot2Dice2").classList.add("invisible");
     document.getElementById("dot3Dice2").classList.add("invisible");
     document.getElementById("dot4Dice2").classList.add("invisible");
-    document.getElementById("dot5Dice2").classList.add("vinvisible");
+    document.getElementById("dot5Dice2").classList.add("visible");
     document.getElementById("dot6Dice2").classList.add("invisible");
     document.getElementById("dot7Dice2").classList.add("invisible");
     document.getElementById("dot8Dice2").classList.add("invisible");
