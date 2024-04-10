@@ -68,3 +68,23 @@ body{
 .invisible{
   visibility: hidden;
 }
+
+.vinvisible{
+  visibility: visible;
+}
+
+#midBtn{
+  display: flex;
+  justify-content: center;
+}
+
+#btn{
+  background-color: black;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 60px;
+}
+
+h3{
+  margin-top: 50px;
+}
