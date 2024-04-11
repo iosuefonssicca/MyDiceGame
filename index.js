@@ -27,7 +27,11 @@ temp2 = temp2 + 1;
 rndResult1 = temp1;
 rndResult2 = temp2;
 
+var rollDices = new Audio("Rolling-Dices.mp3");
+
 function rollTheDices(){
+    
+    rollDices.play();
 
 if(rndResult1 === 1){
     document.getElementById("dot1Dice1").classList.add("invisible");
