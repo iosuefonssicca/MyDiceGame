@@ -12,7 +12,7 @@ document.getElementById("dot2Dice2").classList.add("invisible");
 document.getElementById("dot8Dice2").classList.add("invisible");
 document.getElementById("dot5Dice2").classList.add("invisible");
 
-btn.addEventListener("click", rollTheDices);
+btn.addEventListener("click", rollTheDice);
 
 temp1 = Math.random();
 temp1 = temp1 * 6;
@@ -27,13 +27,14 @@ temp2 = temp2 + 1;
 rndResult1 = temp1;
 rndResult2 = temp2;
 
-var rollDices = new Audio("Rolling-Dices.mp3");
+var rollDice = new Audio("./Rolling-Dice.mp3");
 
-function rollTheDices(){
+function rollTheDice(){
     
-    rollDices.play();
+    rollDice.play();
 
-if(rndResult1 === 1){
+switch(rndResult1){
+    case 1:
     document.getElementById("dot1Dice1").classList.add("invisible");
     document.getElementById("dot2Dice1").classList.add("invisible");
     document.getElementById("dot3Dice1").classList.add("invisible");
@@ -43,7 +44,8 @@ if(rndResult1 === 1){
     document.getElementById("dot7Dice1").classList.add("invisible");
     document.getElementById("dot8Dice1").classList.add("invisible");
     document.getElementById("dot9Dice1").classList.add("invisible");
-    } else if(rndResult1 === 2){
+    break;
+    case 2:
     document.getElementById("dot1Dice1").classList.add("invisible");
     document.getElementById("dot2Dice1").classList.add("invisible");
     document.getElementById("dot4Dice1").classList.add("invisible");
@@ -51,28 +53,32 @@ if(rndResult1 === 1){
     document.getElementById("dot8Dice1").classList.add("invisible");
     document.getElementById("dot9Dice1").classList.add("invisible");
     document.getElementById("dot5Dice1").classList.add("invisible");
-    } else if(rndResult1 === 3){
+    break;
+    case 3:
     document.getElementById("dot1Dice1").classList.add("invisible");
     document.getElementById("dot2Dice1").classList.add("invisible");
     document.getElementById("dot4Dice1").classList.add("invisible");
     document.getElementById("dot6Dice1").classList.add("invisible");
     document.getElementById("dot8Dice1").classList.add("invisible");
     document.getElementById("dot9Dice1").classList.add("invisible");
-    } else if(rndResult1 === 4){
+    break;
+    case 4:
     document.getElementById("dot2Dice1").classList.add("invisible");
     document.getElementById("dot4Dice1").classList.add("invisible");
     document.getElementById("dot6Dice1").classList.add("invisible");
     document.getElementById("dot8Dice1").classList.add("invisible");
     document.getElementById("dot5Dice1").classList.add("invisible");
-    } else if(rndResult1 === 5){
+    break;
+    case 5:
     document.getElementById("dot2Dice1").classList.add("invisible");
     document.getElementById("dot4Dice1").classList.add("invisible");
     document.getElementById("dot6Dice1").classList.add("invisible");
     document.getElementById("dot8Dice1").classList.add("invisible");
-    }else if (rndResult1 === 6){
+    case 6:
     document.getElementById("dot2Dice1").classList.add("invisible");
     document.getElementById("dot8Dice1").classList.add("invisible");
     document.getElementById("dot5Dice1").classList.add("invisible");
+    break;
 }
 
 if(rndResult2 === 1){
@@ -117,12 +123,15 @@ if(rndResult2 === 1){
     document.getElementById("dot5Dice2").classList.add("invisible");
 }
 
+console.log(rndResult1);
+console.log(rndResult2);
+
 if(rndResult1 === rndResult2){
     document.getElementById("ttl").innerHTML = "It was a draw!";
  } else if (rndResult1 > rndResult2) {
     document.getElementById("ttl").innerHTML = "Player 1 won!";
 }else{
     document.getElementById("ttl").innerHTML = "Player 2 won!";
- }
+}
 
 }
