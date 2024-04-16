@@ -33,13 +33,16 @@ function rollTheDice(){
     
     rollDice.play();
 
+
+
+ console.warn(" RNDSULT1 ANTES DO IF: " + rndResult1);
+
 switch(rndResult1){
     case 1:
     document.getElementById("dot1Dice1").classList.add("invisible");
     document.getElementById("dot2Dice1").classList.add("invisible");
     document.getElementById("dot3Dice1").classList.add("invisible");
     document.getElementById("dot4Dice1").classList.add("invisible");
-    document.getElementById("dot5Dice1").classList.add("visible");
     document.getElementById("dot6Dice1").classList.add("invisible");
     document.getElementById("dot7Dice1").classList.add("invisible");
     document.getElementById("dot8Dice1").classList.add("invisible");
@@ -72,6 +75,7 @@ switch(rndResult1){
     case 5:
     document.getElementById("dot2Dice1").classList.add("invisible");
     document.getElementById("dot4Dice1").classList.add("invisible");
+    document.getElementById("dot5Dice1").classList.add("visible");
     document.getElementById("dot6Dice1").classList.add("invisible");
     document.getElementById("dot8Dice1").classList.add("invisible");
     case 6:
@@ -81,17 +85,18 @@ switch(rndResult1){
     break;
 }
 
-if(rndResult2 === 1){
+console.warn(" RNDSULT2 ANTES DO IF: " + rndResult2);
+
+if(rndResult2 == 1){
     document.getElementById("dot1Dice2").classList.add("invisible");
     document.getElementById("dot2Dice2").classList.add("invisible");
     document.getElementById("dot3Dice2").classList.add("invisible");
     document.getElementById("dot4Dice2").classList.add("invisible");
-    document.getElementById("dot5Dice2").classList.add("visible");
     document.getElementById("dot6Dice2").classList.add("invisible");
     document.getElementById("dot7Dice2").classList.add("invisible");
     document.getElementById("dot8Dice2").classList.add("invisible");
     document.getElementById("dot9Dice2").classList.add("invisible");
-    } else if(rndResult2 === 2){
+    } else if(rndResult2 == 2){
     document.getElementById("dot1Dice2").classList.add("invisible");
     document.getElementById("dot2Dice2").classList.add("invisible");
     document.getElementById("dot4Dice2").classList.add("invisible");
@@ -99,25 +104,26 @@ if(rndResult2 === 1){
     document.getElementById("dot8Dice2").classList.add("invisible");
     document.getElementById("dot9Dice2").classList.add("invisible");
     document.getElementById("dot5Dice2").classList.add("invisible");
-    } else if(rndResult2 === 3){
+    } else if(rndResult2 == 3){
     document.getElementById("dot1Dice2").classList.add("invisible");
     document.getElementById("dot2Dice2").classList.add("invisible");
     document.getElementById("dot4Dice2").classList.add("invisible");
     document.getElementById("dot6Dice2").classList.add("invisible");
     document.getElementById("dot8Dice2").classList.add("invisible");
     document.getElementById("dot9Dice2").classList.add("invisible");
-    } else if(rndResult2 === 4){
+    } else if(rndResult2 == 4){
     document.getElementById("dot2Dice2").classList.add("invisible");
     document.getElementById("dot4Dice2").classList.add("invisible");
     document.getElementById("dot6Dice2").classList.add("invisible");
     document.getElementById("dot8Dice2").classList.add("invisible");
     document.getElementById("dot5Dice2").classList.add("invisible");
-    } else if(rndResult2 === 5){
+    } else if(rndResult2 == 5){
     document.getElementById("dot2Dice2").classList.add("invisible");
     document.getElementById("dot4Dice2").classList.add("invisible");
+    document.getElementById("dot5Dice2").classList.add("visible");
     document.getElementById("dot6Dice2").classList.add("invisible");
     document.getElementById("dot8Dice2").classList.add("invisible");
-    }else if (rndResult2 === 6){
+    }else if (rndResult2 == 6){
     document.getElementById("dot2Dice2").classList.add("invisible");
     document.getElementById("dot8Dice2").classList.add("invisible");
     document.getElementById("dot5Dice2").classList.add("invisible");
