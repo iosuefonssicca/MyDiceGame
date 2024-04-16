@@ -30,12 +30,17 @@ rndResult2 = temp2;
 var rollDice = new Audio("./Rolling-Dice.mp3");
 
 function rollTheDice(){
+
+    document.getElementById("dot2Dice1").classList.remove("invisible");
+    document.getElementById("dot2Dice2").classList.remove("invisible");
     
+    document.getElementById("dot8Dice1").classList.remove("invisible");
+    document.getElementById("dot8Dice2").classList.remove("invisible");
+
+    document.getElementById("dot5Dice2").classList.remove("invisible");
+    document.getElementById("dot5Dice1").classList.remove("invisible");
+
     rollDice.play();
-
-
-
- console.warn(" RNDSULT1 ANTES DO IF: " + rndResult1);
 
 switch(rndResult1){
     case 1:
@@ -75,17 +80,15 @@ switch(rndResult1){
     case 5:
     document.getElementById("dot2Dice1").classList.add("invisible");
     document.getElementById("dot4Dice1").classList.add("invisible");
-    document.getElementById("dot5Dice1").classList.add("visible");
     document.getElementById("dot6Dice1").classList.add("invisible");
     document.getElementById("dot8Dice1").classList.add("invisible");
+    break;
     case 6:
     document.getElementById("dot2Dice1").classList.add("invisible");
     document.getElementById("dot8Dice1").classList.add("invisible");
     document.getElementById("dot5Dice1").classList.add("invisible");
     break;
 }
-
-console.warn(" RNDSULT2 ANTES DO IF: " + rndResult2);
 
 if(rndResult2 == 1){
     document.getElementById("dot1Dice2").classList.add("invisible");
@@ -120,7 +123,6 @@ if(rndResult2 == 1){
     } else if(rndResult2 == 5){
     document.getElementById("dot2Dice2").classList.add("invisible");
     document.getElementById("dot4Dice2").classList.add("invisible");
-    document.getElementById("dot5Dice2").classList.add("visible");
     document.getElementById("dot6Dice2").classList.add("invisible");
     document.getElementById("dot8Dice2").classList.add("invisible");
     }else if (rndResult2 == 6){
